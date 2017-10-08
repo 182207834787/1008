@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this is form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="keywords" content="this is keywords">
+    <meta name="description" content="this is description">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="">
+        <header class="header">
+            <h1><a href="http://localhost:63342/jineng/index.html">美团账号登录</a></h1>
+            <h1><a href="http://localhost:63342/jineng/index2.html">手机验证登录</a></h1>
+            <span></span>
+        </header>
+        <section class="section">
+            <li>
+                <input type="text" placeholder=" 账户名/手机号/Email" class="user">
+            </li>
+            <li>
+                <input type="password" placeholder=" 请输入您的密码">
+            </li>
+            <p>
+                <button class="btn">登录</button>
+            </p>
+            <p>
+                <span>立即注册</span>
+                <span>找回密码</span>
+            </p>
+        </section>
+    </form>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/event.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript">
+        $('.btn').click(function(){
+            var userV = $('.user').value();
+            if(userV==''){
+                alert("用户名不能为空！")
+            }
+        })
+    </script>
+</body>
+</html>

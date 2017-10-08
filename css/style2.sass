@@ -1,0 +1,75 @@
+html,body
+  width: 100%
+  height: 100%
+body
+  display: -webkit-flex
+  -webkit-flex-direction: column
+  background: #F0EFED
+.header
+  height: .4rem
+  background: #fff
+  display: -webkit-flex
+  position: relative
+  margin-bottom: .03rem
+  h1
+    -webkit-flex: 1
+    text-align: center
+    line-height: .4rem
+    font-size: .14rem
+    font-weight: normal
+    color: #06C1AE
+    &:nth-of-type(1)
+      &:hover ~ span
+        transition: all 1s
+        transform: translateX(0)
+    &:nth-of-type(2)
+      &:hover ~ span
+        transition: all 1s
+        transform: translateX(130%)
+  span
+  span
+    position: absolute
+    width: 40%
+    height: .03rem
+    background: #06C1AE
+    right: 5%
+    bottom: -.03rem
+.section
+  li
+    height: .3rem
+    padding: .1rem
+    background: #fff
+    margin-bottom: .01rem
+    &:nth-of-type(1)
+      position: relative
+      span
+        position: absolute
+        right: .1rem
+        top: .15rem
+        background: #ccc
+        padding: .05rem .1rem
+        border-radius: .05rem
+    &:nth-of-type(2)
+      input
+        background: #eee
+        border-radius: .05rem
+    input
+      width: 100%
+      height: 95%
+      border: 0
+  p
+    &:nth-of-type(1)
+      padding: .15rem .1rem
+      .btn
+        width: 100%
+        height: .4rem
+        background: #06C1AE
+        color: #fff
+        font-size: .18rem
+        border: 0
+    &:nth-of-type(2)
+      padding: 0 .1rem
+      display: -webkit-flex
+      justify-content: space-between
+      color: #06C1AE
+      font-size: .14rem

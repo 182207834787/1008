@@ -1,0 +1,74 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background: #F0EFED; }
+
+.header {
+  height: 0.4rem;
+  background: #fff;
+  display: -webkit-flex;
+  position: relative;
+  margin-bottom: 0.03rem; }
+  .header h1 {
+    -webkit-flex: 1;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 0.14rem;
+    font-weight: normal;
+    color: #06C1AE; }
+    .header h1:nth-of-type(1):hover ~ span {
+      transition: all 1s;
+      transform: translateX(0); }
+    .header h1:nth-of-type(2):hover ~ span {
+      transition: all 1s;
+      transform: translateX(130%); }
+  .header span {
+    position: absolute;
+    width: 40%;
+    height: 0.03rem;
+    background: #06C1AE;
+    right: 5%;
+    bottom: -0.03rem; }
+
+.section li {
+  height: 0.3rem;
+  padding: 0.1rem;
+  background: #fff;
+  margin-bottom: 0.01rem; }
+  .section li:nth-of-type(1) {
+    position: relative; }
+    .section li:nth-of-type(1) span {
+      position: absolute;
+      right: 0.1rem;
+      top: 0.15rem;
+      background: #ccc;
+      padding: 0.05rem 0.1rem;
+      border-radius: 0.05rem; }
+  .section li:nth-of-type(2) input {
+    background: #eee;
+    border-radius: 0.05rem; }
+  .section li input {
+    width: 100%;
+    height: 95%;
+    border: 0; }
+.section p:nth-of-type(1) {
+  padding: 0.15rem 0.1rem; }
+  .section p:nth-of-type(1) .btn {
+    width: 100%;
+    height: 0.4rem;
+    background: #06C1AE;
+    color: #fff;
+    font-size: 0.18rem;
+    border: 0; }
+.section p:nth-of-type(2) {
+  padding: 0 0.1rem;
+  display: -webkit-flex;
+  justify-content: space-between;
+  color: #06C1AE;
+  font-size: 0.14rem; }
+
+/*# sourceMappingURL=style2.css.map */
